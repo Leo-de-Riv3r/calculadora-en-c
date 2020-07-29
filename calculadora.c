@@ -27,6 +27,7 @@ int main(){
       printf("Ingrese el numero %i\n", x);
       scanf("%d", &nums);
       valores[x] = nums;
+      inicio = valores[0];
       result -= valores[x];
       }
         break;
