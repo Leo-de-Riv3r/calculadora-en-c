@@ -9,11 +9,11 @@ int cont=0;
 
    printf("\n\nCuantos numeros va a utilizar? \n");
    scanf("%d", &v);
-   
+   if (v > 0){
    float valores[v];
    int longitud = sizeof(valores) / sizeof(valores[0]);
    
-   printf("\n\nQue operacion desea realizar?\n 0-Salir \n 1-Suma \n 2-Resta \n 3-Multiplicacion \n 4-Division \n 5-Factorial \n 6-Promedio \n 7-El tanto porciento de \n");
+   printf("\n\nQue operacion desea realizar?\n 0-Salir \n 1-Suma \n 2-Resta \n 3-Multiplicacion \n 4-Division \n 5-Factorial \n 6-Promedio \n 7-El tanto porciento de \n 8-N cantidad de X es igual a Y porciento\n");
    scanf("%d", &i);
    
    switch(i){
@@ -104,14 +104,28 @@ int cont=0;
       scanf("%f", &nums);
       printf("Ingrese el porcentaje del total que desea averiguar:");
       scanf("%f", &acum);
-      result = (acum * 100) / nums;
+      result = (acum * nums) / 100;
       printf("El %f porciento de %f es igual a %f", acum, nums, result);
       break;
       
+      case 8:
+      printf("Ingrese la cantidad que representa al 100 porciento:");
+      scanf("%f", &nums);
+      printf("Ingrese la cantidad del total de la cual quiere hallar su equivalencia en porcentaje:");
+      scanf("%f", &acum);
+      result = (acum * 100) / nums;
+	  printf("%f es igual al %f porciento de %f", acum,result,nums);
+	  break;
+	   
       default:
       printf("Ingrese un opcion valida!");
       break;
    }
+}else{
+	printf("Gracias por utilizar este programa ;)");
+	ctrl = 0;
+	
+}
 }while (ctrl != 0);
 
    return 0;
