@@ -16,20 +16,20 @@ int main(){
     switch(i){
       
       case 1:
-<<<<<<< HEAD
+
         for (x = 0; x < longitud; x++){
         printf("Ingrese el numero %i\n", x);
         scanf("%d", &nums);
         valores[x] = nums;
         result +=valores[x];
-=======
+
       for (x = 0; x < longitud; x++){
       printf("Ingrese el numero %i\n", x);
       scanf("%d", &nums);
       valores[x] = nums;
       result = valores[0];
       result +=valores[x];
->>>>>>> 934b0ff3a00324e3be7be78f11a10d6711f1e555
+
       }
       break;
 
