@@ -1,4 +1,3 @@
-//en desarrollo
 #include <stdio.h>
 int main(){
   float result;
@@ -6,7 +5,7 @@ int main(){
   int v,i,x,ctrl;
   int nums, acum;
   do{
-  printf("Cuantos numeros va a utilizar?");
+  printf("\nCuantos numeros va a utilizar?");
   scanf("%d", &v);
   int valores[v];
   int longitud = sizeof(valores) / sizeof(valores[0]);
@@ -16,20 +15,11 @@ int main(){
     switch(i){
       
       case 1:
-<<<<<<< HEAD
         for (x = 0; x < longitud; x++){
         printf("Ingrese el numero %i\n", x);
         scanf("%d", &nums);
         valores[x] = nums;
         result +=valores[x];
-=======
-      for (x = 0; x < longitud; x++){
-      printf("Ingrese el numero %i\n", x);
-      scanf("%d", &nums);
-      valores[x] = nums;
-      result = valores[0];
-      result +=valores[x];
->>>>>>> 934b0ff3a00324e3be7be78f11a10d6711f1e555
       }
       break;
 
@@ -96,7 +86,8 @@ int main(){
         case 6:
           printf("Chau, hasta la proxima, que tengas un buen dia!");
           ctrl = 0;
-
+        break;
+        
         default:
         printf("Ingrese un opcion valida!");
         break;
